@@ -1,0 +1,11 @@
+@tailwind base;
+
+@layer base {
+	html {
+		@apply bg-slate-200;
+		@apply dark:bg-slate-900;
+	}
+}
+
+@tailwind components;
+@tailwind utilities;

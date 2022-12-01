@@ -1,0 +1,59 @@
+{
+    "name": "hn-react",
+    "version": "1.0.0",
+    "description": "Hacker News clone as a React SPA",
+    "scripts": {
+        "build": "webpack",
+        "deploy": "webpack --env production",
+        "start": "webpack serve --open",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dsoreilly/hn-react.git"
+    },
+    "keywords": [
+        "hacker news",
+        "react",
+        "spa"
+    ],
+    "license": "MIT",
+    "devDependencies": {
+        "@babel/core": "^7.18.13",
+        "@babel/preset-env": "^7.18.10",
+        "@babel/preset-react": "^7.18.6",
+        "babel-loader": "^8.2.5",
+        "css-loader": "^6.7.1",
+        "eslint": "^8.23.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-react": "^7.31.7",
+        "html-webpack-plugin": "^5.5.0",
+        "mini-css-extract-plugin": "^2.7.1",
+        "postcss": "^8.4.16",
+        "postcss-loader": "^7.0.1",
+        "postcss-preset-env": "^7.8.0",
+        "prettier": "^2.7.1",
+        "prettier-plugin-tailwindcss": "^0.1.13",
+        "style-loader": "^3.3.1",
+        "stylelint": "^14.11.0",
+        "stylelint-config-prettier": "^9.0.3",
+        "stylelint-config-standard": "^28.0.0",
+        "tailwindcss": "^3.1.8",
+        "webpack": "^5.74.0",
+        "webpack-cli": "^4.10.0",
+        "webpack-dev-server": "^4.10.1"
+    },
+    "dependencies": {
+        "@heroicons/react": "^2.0.10",
+        "@reduxjs/toolkit": "^1.8.5",
+        "core-js": "^3.26.1",
+        "dotenv": "^16.0.2",
+        "firebase": "^9.10.0",
+        "prop-types": "^15.8.1",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-redux": "^8.0.4",
+        "react-router-dom": "^6.3.0"
+    }
+}

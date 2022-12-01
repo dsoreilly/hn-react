@@ -1,0 +1,7 @@
+{
+    "insertPragma": true,
+    "plugins": ["prettier-plugin-tailwindcss"],
+    "singleQuote": true,
+    "tabWidth": 4,
+    "tailwindConfig": "tailwind.config.js"
+}
