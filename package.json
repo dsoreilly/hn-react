@@ -1,7 +1,6 @@
 {
     "name": "hn-react",
     "version": "1.0.0",
-    "description": "Hacker News clone as a React SPA",
     "scripts": {
         "build": "webpack",
         "deploy": "webpack --env production",
@@ -14,8 +13,7 @@
     },
     "keywords": [
         "hacker news",
-        "react",
-        "spa"
+        "react"
     ],
     "license": "MIT",
     "devDependencies": {
