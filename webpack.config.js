@@ -52,7 +52,7 @@ module.exports = (env) => {
         output: {
             filename: '[name].[contenthash].js',
             path: path.resolve(__dirname, 'dist'),
-            publicPath: '/',
+            publicPath: '',
             clean: true,
         },
     };
