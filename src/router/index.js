@@ -51,5 +51,5 @@ export const router = createBrowserRouter(
             ],
         },
     ],
-    { basename: '/hn-react' }
+    { basename: '/hn-react/' }
 );

@@ -45,13 +45,15 @@ module.exports = (env) => {
         ],
         devServer: {
             compress: true,
-            historyApiFallback: true,
+            historyApiFallback: {
+                index: '/hn-react/index.html',
+            },
             port: 8080,
         },
         output: {
             filename: '[name].[contenthash].js',
             path: path.resolve(__dirname, 'dist'),
-            publicPath: '/',
+            publicPath: '/hn-react/',
             clean: true,
         },
     };
