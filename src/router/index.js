@@ -11,7 +11,7 @@ import UserView from '../views/User';
 export const router = createBrowserRouter(
     [
         {
-            path: '/',
+            path: '',
             element: <RootView />,
             errorElement: <ErrorView />,
             children: [
@@ -51,5 +51,5 @@ export const router = createBrowserRouter(
             ],
         },
     ],
-    { basename: '/hn-react/' }
+    { basename: '/hn-react' }
 );

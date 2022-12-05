@@ -37,7 +37,7 @@ module.exports = (env) => {
                         'width=device-width, initial-scale=1, shrink-to-fit=no',
                 },
                 template: './public/index.html',
-                title: 'Hacker News SPA',
+                title: 'HN React',
             }),
             new MiniCssExtractPlugin({
                 filename: '[name].[contenthash].css',
@@ -46,14 +46,14 @@ module.exports = (env) => {
         devServer: {
             compress: true,
             historyApiFallback: {
-                index: '/hn-react/index.html',
+                rewrites: [{ from: /\/hn-react\/[^?]/, to: '/404.html' }],
             },
             port: 8080,
         },
         output: {
             filename: '[name].[contenthash].js',
             path: path.resolve(__dirname, 'dist'),
-            publicPath: '/hn-react/',
+            publicPath: '/hn-react',
             clean: true,
         },
     };
