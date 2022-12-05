@@ -4,8 +4,8 @@ import React from 'react';
 
 function Header() {
     return (
-        <footer className="container mx-auto my-4 flex flex-row justify-center">
-            <div className="text-center text-xs text-slate-500">
+        <footer className="container mx-auto my-4 flex flex-col justify-center px-6 text-center text-xs text-slate-500">
+            <p className="mb-2">
                 React-based{' '}
                 <a
                     className="hover:underline"
@@ -20,14 +20,15 @@ function Header() {
                 >
                     official Firebase API &#9883;
                 </a>
-                <br />
+            </p>
+            <p>
                 <a
                     className="hover:underline"
                     href="https://github.com/dsoreilly/hn-react"
                 >
-                    View the source on GitHub
+                    View on GitHub
                 </a>
-            </div>
+            </p>
         </footer>
     );
 }
