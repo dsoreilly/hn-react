@@ -40,7 +40,6 @@
         "webpack-dev-server": "^4.10.1"
     },
     "dependencies": {
-        "@heroicons/react": "^2.0.10",
         "@reduxjs/toolkit": "^1.8.5",
         "core-js": "^3.26.1",
         "dotenv": "^16.0.2",
