@@ -1,6 +1,7 @@
 {
     "name": "hn-react",
     "version": "1.0.0",
+    "private": true,
     "scripts": {
         "build": "webpack",
         "deploy": "webpack --env production && npm run postdeploy",
