@@ -8,14 +8,14 @@ function Header() {
             <p className="mb-2">
                 React-based{' '}
                 <a
-                    className="hover:underline"
+                    className="whitespace-nowrap hover:underline"
                     href="https://news.ycombinator.com"
                 >
                     Hacker News
                 </a>{' '}
                 clone using the{' '}
                 <a
-                    className="hover:underline"
+                    className="whitespace-nowrap hover:underline"
                     href="https://github.com/HackerNews/API"
                 >
                     official Firebase API &#9883;
