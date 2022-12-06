@@ -1,18 +1,24 @@
 /** @format */
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { ArrowDownIcon } from '@heroicons/react/20/solid';
 import { useGetStoryIdsByTypeQuery } from '../api';
 import Item from '../components/Item';
 import Placeholder from '../components/Placeholder';
+import { useLocation } from 'react-router-dom';
 
 function ItemsView(props) {
     const { type } = props;
     const [count, setCount] = useState(20);
+    const { pathname } = useLocation();
     const { data, error, isFetching, isLoading } = useGetStoryIdsByTypeQuery(
         type || 'top'
     );
+
+    useEffect(() => {
+        setCount(20);
+    }, [pathname]);
 
     if (error) {
         return <Placeholder message={error.message} />;
