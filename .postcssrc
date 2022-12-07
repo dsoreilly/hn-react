@@ -1,7 +1,7 @@
 {
-    "map": false,
-    "plugins": {
-        "tailwindcss": {},
-        "postcss-preset-env": {}
-    }
+  "map": false,
+  "plugins": {
+    "tailwindcss": {},
+    "postcss-preset-env": {}
+  }
 }

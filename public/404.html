@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>HN React</title>
-    </head>
-    <body>
-        <script>
-            /**
-             * Replace the location with a search parameter for the path
-             * after the app's directory path.
-             * @example
-             * https://hostname.tdl/dir/path -> https://hostname.tdl/dir/?/path
-             */
-            (function(){
-                var l = window.location;
-                var d = l.pathname.split('/')[1];
-                l.replace(
-                    l.protocol +
-                    '//' +
-                    l.host
-                    + l.pathname.replace(d, d + '/?'));
-            })();
-        </script>
-    </body>
+  <head>
+    <meta charset="utf-8">
+    <title>HN React</title>
+  </head>
+  <body>
+    <script>
+      /**
+       * Replace the location with a search parameter for the path
+       * after the app's directory path.
+       * @example
+       * https://hostname.tdl/dir/path -> https://hostname.tdl/dir/?/path
+       */
+      (function(){
+        var l = window.location;
+        var d = l.pathname.split('/')[1];
+        l.replace(
+          l.protocol +
+          '//' +
+          l.host
+          + l.pathname.replace(d, d + '/?'));
+      })();
+      </script>
+  </body>
 </html>
