@@ -34,7 +34,7 @@ function UserView() {
                 </div>
                 {data.about && (
                     <div
-                        className="mb-2 text-sm"
+                        className="mb-2 overflow-auto text-sm"
                         dangerouslySetInnerHTML={{
                             __html: data.about,
                         }}

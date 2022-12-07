@@ -13,13 +13,16 @@ function Header() {
                 >
                     Hacker News
                 </a>{' '}
-                clone using the{' '}
-                <a
-                    className="whitespace-nowrap hover:underline"
-                    href="https://github.com/HackerNews/API"
-                >
-                    official Firebase API &#9883;
-                </a>
+                clone using the official{' '}
+                <span className="whitespace-nowrap">
+                    <a
+                        className=" hover:underline"
+                        href="https://github.com/HackerNews/API"
+                    >
+                        Firebase API
+                    </a>{' '}
+                    &#9883;
+                </span>
             </p>
             <p>
                 <a
