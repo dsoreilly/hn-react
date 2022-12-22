@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-function Header() {
+function Footer() {
   return (
     <footer className="container mx-auto my-4 flex flex-col justify-center px-6 text-center text-xs text-slate-500">
       <p className="mb-2">
@@ -11,18 +11,10 @@ function Header() {
           className="whitespace-nowrap hover:underline"
           href="https://news.ycombinator.com"
         >
-          Hacker News
+          {' '}
+          Hacker News{' '}
         </a>{' '}
-        clone using the official{' '}
-        <span className="whitespace-nowrap">
-          <a
-            className=" hover:underline"
-            href="https://github.com/HackerNews/API"
-          >
-            Firebase API
-          </a>{' '}
-          &#9883;
-        </span>
+        clone &#9883;
       </p>
       <p>
         <a
@@ -36,4 +28,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Footer;
