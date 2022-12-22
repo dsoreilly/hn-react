@@ -34,7 +34,7 @@ module.exports = (env) => {
           viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
         },
         template: './public/index.html',
-        title: 'HN React',
+        title: 'Hacker News • React ⚛️',
       }),
       new MiniCssExtractPlugin({
         filename: '[name].[contenthash].css',
