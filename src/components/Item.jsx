@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { useGetItemByIdQuery } from '../api';
 import timeAgo from '../utils/timeAgo';
-import Placeholder from './Placeholder';
+import Placeholder from './Placeholder.jsx';
 
 function Item(props) {
   const { data, error, isFetching, isLoading } = useGetItemByIdQuery(props.id);

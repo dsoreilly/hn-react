@@ -8,6 +8,9 @@ module.exports = (env) => {
   return {
     mode: env.production ? 'production' : 'development',
     entry: './src/index.js',
+    resolve: {
+      extensions: ['.css', '.js', '.jsx'],
+    },
     module: {
       rules: [
         {
@@ -20,7 +23,7 @@ module.exports = (env) => {
           ],
         },
         {
-          test: /\.js$/i,
+          test: /\.jsx?$/i,
           include: path.join(__dirname, 'src/'),
           use: ['babel-loader'],
         },
