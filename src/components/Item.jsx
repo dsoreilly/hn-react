@@ -24,9 +24,9 @@ function Item(props) {
         <div
           className={`flex flex-col ${
             props.level <= 0
-              ? 'mt-4 rounded bg-slate-50 p-4 shadow dark:bg-slate-800'
+              ? 'mt-4 overflow-x-auto rounded bg-slate-50 p-4 shadow dark:bg-slate-800'
               : props.level >= 0
-              ? 'mb-4'
+              ? 'mb-4 min-w-[295px]'
               : ''
           } ${
             isFetching || data.deleted
@@ -76,7 +76,7 @@ function Item(props) {
         <div
           className={
             props.level === 0
-              ? 'mt-4 rounded bg-slate-50 p-4 shadow dark:bg-slate-800'
+              ? 'mt-4 overflow-x-auto rounded bg-slate-50 p-4 shadow dark:bg-slate-800'
               : ''
           }
         >
