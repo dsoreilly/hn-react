@@ -32,7 +32,7 @@
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.2.0",
     "style-loader": "^3.3.1",
-    "tailwindcss": "^3.1.8",
+    "tailwindcss": "^3.2.7",
     "webpack": "^5.74.0",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.10.1"
