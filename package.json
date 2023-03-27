@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
-    "core-js": "^3.26.1",
+    "core-js": "^3.29.1",
     "dotenv": "^16.0.2",
     "firebase": "^9.17.1",
     "prop-types": "^15.8.1",
