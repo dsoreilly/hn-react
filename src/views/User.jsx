@@ -1,10 +1,10 @@
 /** @format */
 
-import React from 'react';
-import { useParams } from 'react-router-dom';
-import { useGetUserByIdQuery } from '../api';
-import dateCreated from '../utils/dateCreated';
-import Placeholder from '../components/Placeholder';
+import React from "react";
+import { useParams } from "react-router-dom";
+import { useGetUserByIdQuery } from "../api";
+import dateCreated from "../utils/dateCreated";
+import Placeholder from "../components/Placeholder";
 
 function UserView() {
   const { id } = useParams();
@@ -23,8 +23,8 @@ function UserView() {
       <div
         className={`mt-4 flex flex-col rounded bg-slate-50 p-4 text-slate-900 shadow dark:bg-slate-800 dark:text-slate-300 ${
           isFetching
-            ? 'pointer-events-none text-slate-900/50 dark:text-slate-300/50'
-            : 'text-slate-900 dark:text-slate-300'
+            ? "pointer-events-none text-slate-900/50 dark:text-slate-300/50"
+            : "text-slate-900 dark:text-slate-300"
         }`}
       >
         <div className="mb-2">

@@ -1,8 +1,8 @@
 /** @format */
 
-import React from 'react';
-import { useParams } from 'react-router-dom';
-import Item from '../components/Item';
+import React from "react";
+import { useParams } from "react-router-dom";
+import Item from "../components/Item";
 
 function ItemView() {
   const { id } = useParams();

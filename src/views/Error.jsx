@@ -1,9 +1,9 @@
 /** @format */
 
-import React from 'react';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
-import Placeholder from '../components/Placeholder';
+import React from "react";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import Placeholder from "../components/Placeholder";
 
 function ErrorView() {
   return (

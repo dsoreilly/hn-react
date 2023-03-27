@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "build": "webpack",
-    "deploy": "webpack --env production && npm run postdeploy",
-    "postdeploy": "cp ./public/404.html ./dist",
+    "deploy": "webpack --env production && npm run post-deploy",
+    "post-deploy": "cp ./public/404.html ./dist",
     "start": "webpack serve --open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

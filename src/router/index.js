@@ -1,17 +1,17 @@
 /** @format */
 
-import React from 'react';
-import { createBrowserRouter } from 'react-router-dom';
-import ErrorView from '../views/Error';
-import ItemView from '../views/Item';
-import ItemsView from '../views/Items';
-import RootView from '../views/Root';
-import UserView from '../views/User';
+import React from "react";
+import { createBrowserRouter } from "react-router-dom";
+import ErrorView from "../views/Error";
+import ItemView from "../views/Item";
+import ItemsView from "../views/Items";
+import RootView from "../views/Root";
+import UserView from "../views/User";
 
 export const router = createBrowserRouter(
   [
     {
-      path: '/',
+      path: "/",
       element: <RootView />,
       errorElement: <ErrorView />,
       children: [
@@ -23,27 +23,27 @@ export const router = createBrowserRouter(
               element: <ItemsView />,
             },
             {
-              path: 'item/:id',
+              path: "item/:id",
               element: <ItemView />,
             },
             {
-              path: '/ask',
+              path: "/ask",
               element: <ItemsView type="ask" />,
             },
             {
-              path: '/jobs',
+              path: "/jobs",
               element: <ItemsView type="job" />,
             },
             {
-              path: '/newest',
+              path: "/newest",
               element: <ItemsView type="new" />,
             },
             {
-              path: '/show',
+              path: "/show",
               element: <ItemsView type="show" />,
             },
             {
-              path: 'user/:id',
+              path: "user/:id",
               element: <UserView />,
             },
           ],
@@ -51,5 +51,5 @@ export const router = createBrowserRouter(
       ],
     },
   ],
-  { basename: '/hn-react/' }
+  { basename: "/hn-react/" }
 );

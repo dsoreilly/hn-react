@@ -1,18 +1,18 @@
 /** @format */
 
-import React, { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
-import { useGetStoryIdsByTypeQuery } from '../api';
-import Item from '../components/Item';
-import Placeholder from '../components/Placeholder';
-import { useLocation } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import PropTypes from "prop-types";
+import { useGetStoryIdsByTypeQuery } from "../api";
+import Item from "../components/Item";
+import Placeholder from "../components/Placeholder";
+import { useLocation } from "react-router-dom";
 
 function ItemsView(props) {
   const { type } = props;
   const [count, setCount] = useState(20);
   const { pathname } = useLocation();
   const { data, error, isFetching, isLoading } = useGetStoryIdsByTypeQuery(
-    type || 'top'
+    type || "top"
   );
 
   useEffect(() => {

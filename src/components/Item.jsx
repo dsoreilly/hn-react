@@ -1,11 +1,11 @@
 /** @format */
 
-import React from 'react';
-import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
-import { useGetItemByIdQuery } from '../api';
-import timeAgo from '../utils/timeAgo';
-import Placeholder from './Placeholder.jsx';
+import React from "react";
+import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
+import { useGetItemByIdQuery } from "../api";
+import timeAgo from "../utils/timeAgo";
+import Placeholder from "./Placeholder.jsx";
 
 function Item(props) {
   const { data, error, isFetching, isLoading } = useGetItemByIdQuery(props.id);
@@ -20,23 +20,23 @@ function Item(props) {
 
   if (data) {
     return (
-      <div className={props.level > 1 ? 'ml-8' : ''}>
+      <div className={props.level > 1 ? "ml-8" : ""}>
         <div
           className={`flex flex-col ${
             props.level <= 0
-              ? 'mt-4 overflow-x-auto rounded bg-slate-50 p-4 shadow dark:bg-slate-800'
+              ? "mt-4 overflow-x-auto rounded bg-slate-50 p-4 shadow dark:bg-slate-800"
               : props.level >= 0
-              ? 'mb-4 min-w-[295px]'
-              : ''
+              ? "mb-4 min-w-[295px]"
+              : ""
           } ${
             isFetching || data.deleted
-              ? 'pointer-events-none text-slate-900/50 dark:text-slate-300/50'
-              : 'text-slate-900 dark:text-slate-300'
+              ? "pointer-events-none text-slate-900/50 dark:text-slate-300/50"
+              : "text-slate-900 dark:text-slate-300"
           }`}
         >
           {data.title && (
             <div className="mb-2">
-              <a className="hover:underline" href={data.url ? data.url : ''}>
+              <a className="hover:underline" href={data.url ? data.url : ""}>
                 <h2>{data.title}</h2>
               </a>
             </div>
@@ -56,12 +56,12 @@ function Item(props) {
             {data.score > -1 && `${data.score} points by `}
             <Link className="hover:underline" to={`/user/${data.by}`}>
               {data.by}
-            </Link>{' '}
+            </Link>{" "}
             {timeAgo(data.time)}
             {data.descendants > -1 && (
               <>
-                {' '}
-                •{' '}
+                {" "}
+                •{" "}
                 <Link className="hover:underline" to={`/item/${data.id}`}>
                   {data.descendants} comments
                 </Link>
@@ -76,8 +76,8 @@ function Item(props) {
         <div
           className={
             props.level === 0
-              ? 'mt-4 overflow-x-auto rounded bg-slate-50 p-4 shadow dark:bg-slate-800'
-              : ''
+              ? "mt-4 overflow-x-auto rounded bg-slate-50 p-4 shadow dark:bg-slate-800"
+              : ""
           }
         >
           {props.level >= 0 &&
