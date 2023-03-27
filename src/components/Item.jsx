@@ -36,9 +36,12 @@ function Item(props) {
         >
           {data.title && (
             <div className="mb-2">
-              <a className="hover:underline" href={data.url ? data.url : ""}>
+              <Link
+                className="hover:underline"
+                to={data.url ? data.url : `/item/${data.id}`}
+              >
                 <h2>{data.title}</h2>
-              </a>
+              </Link>
             </div>
           )}
           {props.level >= 0 && data.text && (
