@@ -38,7 +38,7 @@
     "webpack-dev-server": "^4.13.2"
   },
   "dependencies": {
-    "@reduxjs/toolkit": "^1.9.3",
+    "@reduxjs/toolkit": "^1.9.5",
     "core-js": "^3.30.1",
     "dotenv": "^16.0.2",
     "firebase": "^10.1.0",
