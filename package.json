@@ -28,7 +28,7 @@
     "mini-css-extract-plugin": "^2.7.6",
     "postcss": "^8.4.31",
     "postcss-loader": "^7.3.3",
-    "postcss-preset-env": "^9.1.4",
+    "postcss-preset-env": "^9.2.0",
     "prettier": "^3.0.3",
     "prettier-plugin-tailwindcss": "^0.5.5",
     "style-loader": "^3.3.3",
