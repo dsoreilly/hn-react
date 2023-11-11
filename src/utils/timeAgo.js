@@ -1,5 +1,3 @@
-/** @format */
-
 const getLabel = (time, unit) => {
   return `${time} ${unit}${time !== 1 ? "s" : ""} ago`;
 };
