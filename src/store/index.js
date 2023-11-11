@@ -1,5 +1,3 @@
-/** @format */
-
 import { configureStore } from "@reduxjs/toolkit";
 import { api } from "../api";
 

@@ -1,5 +1,3 @@
-/** @format */
-
 import { createApi, fakeBaseQuery } from "@reduxjs/toolkit/query/react";
 import { initializeApp } from "firebase/app";
 import { child, get, getDatabase, ref } from "firebase/database";

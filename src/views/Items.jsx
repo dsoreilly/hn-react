@@ -1,5 +1,3 @@
-/** @format */
-
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { useGetStoryIdsByTypeQuery } from "../api";
@@ -12,7 +10,7 @@ function ItemsView(props) {
   const [count, setCount] = useState(20);
   const { pathname } = useLocation();
   const { data, error, isFetching, isLoading } = useGetStoryIdsByTypeQuery(
-    type || "top"
+    type || "top",
   );
 
   useEffect(() => {
