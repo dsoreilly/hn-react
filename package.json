@@ -1,11 +1,13 @@
 {
   "private": true,
+  "type": "module",
   "scripts": {
     "start": "vite",
     "build": "vite build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "@eslint/js": "^8.53.0",
     "@vitejs/plugin-react": "^4.1.1",
     "eslint": "^8.53.0",
     "eslint-config-prettier": "^9.0.0",
