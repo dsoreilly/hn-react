@@ -5,7 +5,7 @@ const DATE_FORMAT = {
   day: "numeric",
 };
 
-/** @type {(timestamp: number) => string} timestamp */
+/** @type {(timestamp: number) => string} */
 export default function dateCreated(timestamp) {
   const creationDate = new Date(timestamp * 1000).toLocaleDateString(
     "en-US",
