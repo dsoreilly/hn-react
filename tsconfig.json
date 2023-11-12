@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true
+  },
+  "extends": [
+    "@tsconfig/recommended/tsconfig.json",
+    "@tsconfig/vite-react/tsconfig.json"
+  ]
+}

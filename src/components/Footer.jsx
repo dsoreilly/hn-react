@@ -1,5 +1,3 @@
-import React from "react";
-
 function Footer() {
   return (
     <footer className="container mx-auto my-4 flex flex-col justify-center px-6 text-center text-xs text-slate-500">

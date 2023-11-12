@@ -1,4 +1,3 @@
-import React from "react";
 import { useParams } from "react-router-dom";
 import { useGetUserByIdQuery } from "../api";
 import dateCreated from "../utils/dateCreated";
@@ -8,7 +7,7 @@ function UserView() {
   const { id } = useParams();
   const { data, error, isFetching, isLoading } = useGetUserByIdQuery(id);
 
-  if (error) {
+  if (error && error instanceof Error) {
     return <Placeholder message={error.message} />;
   }
 

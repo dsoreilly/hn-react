@@ -1,14 +1,14 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { useGetItemByIdQuery } from "../api";
 import timeAgo from "../utils/timeAgo";
-import Placeholder from "./Placeholder.jsx";
+import Placeholder from "./Placeholder";
 
+/** @param {{ id: number, level: number }} props */
 function Item(props) {
   const { data, error, isFetching, isLoading } = useGetItemByIdQuery(props.id);
 
-  if (error) {
+  if (error && error instanceof Error) {
     return <Placeholder message={error.message} />;
   }
 
@@ -72,7 +72,9 @@ function Item(props) {
           {props.level === 0 &&
             data.parts &&
             data.parts.length > 0 &&
-            data.parts.map((id) => <Item id={Number(id)} key="id" level={0} />)}
+            data.parts.map((/** @type {number} */ id) => (
+              <Item id={Number(id)} key="id" level={0} />
+            ))}
         </div>
         <div
           className={
@@ -84,8 +86,8 @@ function Item(props) {
           {props.level >= 0 &&
             data.kids &&
             data.kids.length > 0 &&
-            data.kids.map((id) => (
-              <Item id={Number(id)} key={id} level={props.level + 1} />
+            data.kids.map((/** @type {number} */ id) => (
+              <Item id={id} key={id} level={props.level + 1} />
             ))}
         </div>
       </div>

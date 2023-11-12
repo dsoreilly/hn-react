@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import PropTypes from "prop-types";
 import { useGetStoryIdsByTypeQuery } from "../api";
 import Item from "../components/Item";
 import Placeholder from "../components/Placeholder";
-import { useLocation } from "react-router-dom";
 
+/** @param {{ type?: string }} props */
 function ItemsView(props) {
   const { type } = props;
   const [count, setCount] = useState(20);
@@ -17,7 +18,7 @@ function ItemsView(props) {
     setCount(20);
   }, [pathname]);
 
-  if (error) {
+  if (error && error instanceof Error) {
     return <Placeholder message={error.message} />;
   }
 
@@ -28,8 +29,8 @@ function ItemsView(props) {
   if (data) {
     return (
       <>
-        {data.slice(0, count).map((id) => (
-          <Item id={parseInt(id, 10)} key={id} level={-1} />
+        {data.slice(0, count).map((/** @type {number} */ id) => (
+          <Item id={id} key={id} level={-1} />
         ))}
         {data.length > count && (
           <div className="mt-auto flex flex-row">

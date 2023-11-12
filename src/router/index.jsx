@@ -1,4 +1,3 @@
-import React from "react";
 import { createBrowserRouter } from "react-router-dom";
 import ErrorView from "../views/Error";
 import ItemView from "../views/Item";
