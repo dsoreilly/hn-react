@@ -1,2 +1,18 @@
+# builds
 dist/
+
+# ESLint
+.eslintcache
+
+# logs
+*.log
+
+# macOS
+.DS_Store
+.fseventsd
+
+# Node
+.node_repl_history
+.npm
 node_modules/
+npm-debug.log*
