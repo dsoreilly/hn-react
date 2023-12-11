@@ -9,7 +9,7 @@
     "@tsconfig/recommended": "^1.0.3",
     "@tsconfig/vite-react": "^2.0.1",
     "@types/react-dom": "^18.2.17",
-    "@vitejs/plugin-react": "^4.2.0",
+    "@vitejs/plugin-react": "^4.2.1",
     "eslint": "^8.55.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-react": "^7.33.2",
