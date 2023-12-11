@@ -19,7 +19,7 @@
     "prettier-plugin-tailwindcss": "^0.5.7",
     "prop-types": "^15.8.1",
     "tailwindcss": "^3.3.6",
-    "vite": "^5.0.2"
+    "vite": "^5.0.7"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.0.0",
