@@ -1,9 +1,18 @@
-/** @type {(time: number, unit: string) => string} */
+/**
+ * @param {number} time
+ * @param {string} unit
+ * @returns {string}
+ */
+
 function stringify(time, unit) {
   return `${time} ${unit}${time !== 1 ? "s" : ""} ago`;
 }
 
-/** @type {(timestamp: number) => string} */
+/**
+ * @param {number} timestamp
+ * @returns {string}
+ */
+
 export default function timeAgo(timestamp) {
   const ms = Date.now() / 1000 - timestamp;
 

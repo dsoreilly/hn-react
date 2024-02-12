@@ -1,10 +1,14 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { useGetItemByIdQuery } from "../api";
-import timeAgo from "../utils/timeAgo";
-import Placeholder from "./Placeholder";
+import timeAgo from "@/utils/timeAgo";
+import Placeholder from "@/components/Placeholder";
 
-/** @param {{ id: number, level: number }} props */
+/**
+ * @param {{ id: number, level: number }} props
+ * @returns {JSX.Element | undefined}
+ */
+
 function Item(props) {
   const { data, error, isFetching, isLoading } = useGetItemByIdQuery(props.id);
 
@@ -24,8 +28,8 @@ function Item(props) {
             props.level <= 0
               ? "mt-4 overflow-x-auto rounded bg-slate-50 p-4 shadow dark:bg-slate-800"
               : props.level >= 0
-              ? "mb-4 min-w-[295px]"
-              : ""
+                ? "mb-4 min-w-[295px]"
+                : ""
           } ${
             isFetching || data.deleted
               ? "pointer-events-none text-slate-900/50 dark:text-slate-300/50"

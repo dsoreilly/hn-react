@@ -2,10 +2,14 @@ import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import PropTypes from "prop-types";
 import { useGetStoryIdsByTypeQuery } from "../api";
-import Item from "../components/Item";
-import Placeholder from "../components/Placeholder";
+import Item from "@/components/Item";
+import Placeholder from "@/components/Placeholder";
 
-/** @param {{ type?: string }} props */
+/**
+ * @param {{ type?: string }} props
+ * @returns {JSX.Element | undefined}
+ */
+
 function ItemsView(props) {
   const { type } = props;
   const [count, setCount] = useState(20);

@@ -1,9 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
-import ErrorView from "../views/Error";
-import ItemView from "../views/Item";
-import ItemsView from "../views/Items";
-import RootView from "../views/Root";
-import UserView from "../views/User";
+import ErrorView from "@/views/Error";
+import ItemView from "@/views/Item";
+import ItemsView from "@/views/Items";
+import RootView from "@/views/Root";
+import UserView from "@/views/User";
 
 export default createBrowserRouter(
   [

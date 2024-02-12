@@ -1,4 +1,7 @@
-/** @type {import("postcss-load-config").Config} */
+/**
+ * @type {import("postcss-load-config").Config}
+ */
+
 module.exports = {
   plugins: {
     "postcss-preset-env": {},

@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
-import { useGetUserByIdQuery } from "../api";
-import dateCreated from "../utils/dateCreated";
-import Placeholder from "../components/Placeholder";
+import { useGetUserByIdQuery } from "@/api";
+import dateCreated from "@/utils/dateCreated";
+import Placeholder from "@/components/Placeholder";
 
 function UserView() {
   const { id } = useParams();
