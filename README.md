@@ -1,6 +1,6 @@
 # hn-react
 
-[React](https://reactjs.org/) based [Hacker News](https://news.ycombinator.com/) clone :atom_symbol:
+[React](https://reactjs.org/) based [Hacker News](https://news.ycombinator.com/) SPA clone. :atom_symbol:
 
 ## Features
 
