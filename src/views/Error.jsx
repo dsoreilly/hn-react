@@ -2,7 +2,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Placeholder from "../components/Placeholder";
 
-function ErrorView() {
+export default function ErrorView() {
   return (
     <div className="flex min-h-screen flex-col">
       <Header />
@@ -13,5 +13,3 @@ function ErrorView() {
     </div>
   );
 }
-
-export default ErrorView;

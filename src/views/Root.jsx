@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 import Footer from "@/components/Footer.jsx";
 import Header from "@/components/Header.jsx";
 
-function RootView() {
+export default function RootView() {
   return (
     <div className="flex min-h-screen flex-col">
       <Header />
@@ -13,5 +13,3 @@ function RootView() {
     </div>
   );
 }
-
-export default RootView;

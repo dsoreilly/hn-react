@@ -9,7 +9,7 @@ import Placeholder from "@/components/Placeholder";
  * @returns {JSX.Element | undefined}
  */
 
-function Item(props) {
+export default function Item(props) {
   const { data, error, isFetching, isLoading } = useGetItemByIdQuery(props.id);
 
   if (error && error instanceof Error) {
@@ -103,5 +103,3 @@ Item.propTypes = {
   id: PropTypes.number.isRequired,
   level: PropTypes.number.isRequired,
 };
-
-export default Item;

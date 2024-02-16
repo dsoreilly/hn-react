@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
  * @returns {JSX.Element}
  */
 
-function Placeholder(props) {
+export default function Placeholder(props) {
   const { message } = props;
   return <div className="mx-auto py-8 text-slate-500">{message}</div>;
 }
@@ -13,5 +13,3 @@ function Placeholder(props) {
 Placeholder.propTypes = {
   message: PropTypes.string.isRequired,
 };
-
-export default Placeholder;

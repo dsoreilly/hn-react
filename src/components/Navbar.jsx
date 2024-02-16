@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-function Navbar() {
+export default function Navbar() {
   return (
     <nav>
       <ul className="mx-2 flex flex-row">
@@ -56,5 +56,3 @@ function Navbar() {
     </nav>
   );
 }
-
-export default Navbar;

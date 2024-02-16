@@ -10,7 +10,7 @@ import Placeholder from "@/components/Placeholder";
  * @returns {JSX.Element | undefined}
  */
 
-function ItemsView(props) {
+export default function ItemsView(props) {
   const { type } = props;
   const [count, setCount] = useState(20);
   const { pathname } = useLocation();
@@ -55,5 +55,3 @@ function ItemsView(props) {
 ItemsView.propTypes = {
   type: PropTypes.string,
 };
-
-export default ItemsView;

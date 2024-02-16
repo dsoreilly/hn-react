@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 
-function Header() {
+export default function Header() {
   return (
     <header className="sticky top-0 w-full border-slate-800 bg-orange-500/90 shadow backdrop-blur dark:border-b dark:bg-slate-900/90">
       <div className="container mx-auto flex flex-row px-6">
@@ -18,5 +18,3 @@ function Header() {
     </header>
   );
 }
-
-export default Header;

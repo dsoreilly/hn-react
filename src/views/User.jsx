@@ -3,7 +3,7 @@ import { useGetUserByIdQuery } from "@/api";
 import dateCreated from "@/utils/dateCreated";
 import Placeholder from "@/components/Placeholder";
 
-function UserView() {
+export default function UserView() {
   const { id } = useParams();
   const { data, error, isFetching, isLoading } = useGetUserByIdQuery(id);
 
@@ -43,5 +43,3 @@ function UserView() {
     );
   }
 }
-
-export default UserView;
