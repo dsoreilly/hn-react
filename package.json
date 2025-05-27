@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "@tsconfig/recommended": "^1.0.8",
-    "@tsconfig/vite-react": "^3.4.0",
+    "@tsconfig/vite-react": "^6.3.5",
     "@types/react-dom": "^19.1.5",
     "@vitejs/plugin-react": "^4.5.0",
     "eslint": "^9.27.0",
