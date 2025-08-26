@@ -11,7 +11,7 @@
     "@tsconfig/recommended": "^1.0.10",
     "@tsconfig/vite-react": "^7.0.0",
     "@types/react-dom": "^19.1.7",
-    "@vitejs/plugin-react": "^5.0.0",
+    "@vitejs/plugin-react": "^5.0.1",
     "eslint": "^9.34.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-react": "^7.37.5",
