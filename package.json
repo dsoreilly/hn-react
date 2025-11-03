@@ -8,7 +8,7 @@
     "react-router-dom": "^7.9.5"
   },
   "devDependencies": {
-    "@tsconfig/recommended": "^1.0.10",
+    "@tsconfig/recommended": "^1.0.11",
     "@tsconfig/vite-react": "^7.0.1",
     "@types/react-dom": "^19.2.2",
     "@vitejs/plugin-react": "^5.1.0",
